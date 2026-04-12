@@ -1,0 +1,94 @@
+[ ] first section/hero section
+    [ ] navbar
+    - should be screen height
+        [ ] 3 divs(flex space between)
+            [ ] logo
+            [ ] navlinks
+                [ ] products
+                [ ] features
+                [ ] marketplace
+                [ ] company
+            [ ] log in
+        
+    [ ] hero
+        [ ] large text
+        [ ] details
+        [ ] buttons
+            [ ] get started
+            [ ] learn more 
+
+[ ] screen height
+    [ ] image
+
+[ ] logos (flex)
+[ ] long button link
+    !!![ ] need to fix change color if span even if hover is on gray
+
+[ ] screen height
+    [ ] text above with details
+    [ ] div of bullets
+        [ ] bullet 1
+        [ ] bullet 2
+        [ ] bullet 3
+        [ ] bullet 4
+
+[ ] screen height
+    [ ] div align centered but is fit to content
+        [ ] image
+        [ ] text
+            [ ] logo
+            [ ] message
+            [ ] signature
+
+[ ] screen height
+    [ ] pricing details
+        [ ] 3 <p>'s with details
+        [ ] div of cards (flex)
+            [ ] card1
+                [ ] ...
+            [ ] card2
+                [ ] ...
+            [ ] card3
+                [ ] ...
+
+[ ] faq
+    [ ] faq text div
+    [ ] div of faq items * 6
+        [ ] per div (flex)
+            [ ] div question
+            [ ] div div answer
+
+[ ] screen height
+    [ ] centered div    
+        [ ] text label
+        [ ] text desription
+        [ ] div buttons
+            [ ] get started
+            [ ] learn more
+
+[ ] foot
+    [ ] border top
+    [ ] mt 
+    [ ] 2 divs justify space between
+        [ ] div1 logo
+        [ ] div2 details
+            [ ] div solutions
+                [ ] label
+                [ ] items 
+                    [ ] links
+                    [ ] hover change color
+            [ ] div support
+                [ ] label
+                [ ] items 
+                    [ ] links
+                    [ ] hover change color
+            [ ] div company
+                [ ] label
+                [ ] items 
+                    [ ] links
+                    [ ] hover change color
+            [ ] div legal
+                [ ] label
+                [ ] items 
+                    [ ] links
+                    [ ] hover change color

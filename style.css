@@ -1,0 +1,5 @@
+@import "tailwindcss"; 
+
+#pill:hover span{
+    color: oklch(78.5% 0.115 274.713);
+}
