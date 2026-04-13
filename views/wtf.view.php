@@ -61,7 +61,7 @@
 		
 		<!-- brand logos -->
 		<div class="text-gray-50 flex justify-around text-3xl mt-32">
-			<p>transitor</p>
+			<p>transistor</p>
 			<p>reform</p>
 			<p>tuple</p>
 			<p>savvycal</p>
@@ -169,7 +169,7 @@
 		</div>
 
 		<!-- pricing -->
-		<div class="mt-40 bg-pink-600 p-10">
+		<div class="mt-40 p-10">
 			<div class="flex justify-center">
 				<div class="text-center w-9/12">
 					<p class="text-indigo-400 text-m font-medium">Pricing</p>
@@ -179,9 +179,9 @@
 			</div>
 
 			<!-- cards -->
-			<div class="bg-amber-600 flex text-gray-400 text-sm mt-20">
-				<!-- card1 -->
-				<div class="bg-indigo-950 flex-1 border border-r-0 border-gray-600 mt-10 rounded-l-3xl px-9 py-10 flex flex-col content-between">
+			<div class="flex text-gray-400 text-sm mt-20">
+				<!-- card1 freelancer -->
+				<div class="bg-indigo-950 flex-1 border border-r-0 border-gray-600 mt-10 rounded-l-3xl px-9 py-10 flex flex-col justify-between">
 					<div>
 						<p class="text-gray-50 text-lg font-semibold">Freelancer</p>
 						<p class="mt-5">The essentials to provide your best work for clients.</p>
@@ -201,8 +201,8 @@
 					</div>
 				</div>
 
-				<!-- card2 -->
-				<div class="bg-indigo-950 flex-1 border border-gray-600 rounded-t-3xl px-9 py-10 flex flex-col content-between">
+				<!-- card2 startup -->
+				<div class="bg-indigo-950 flex-1 border border-gray-600 rounded-t-3xl px-9 py-10 flex flex-col justify-between">
 					<div>
 						<p class="text-indigo-600 text-lg font-semibold">Startup</p>
 						<p class="mt-5">A plan that scales with your rapidly growing business.</p>
@@ -223,8 +223,8 @@
 					</div>
 				</div>
 
-				<!-- card3 -->
-				<div class="bg-indigo-950 flex-1 border border-l-0 border-gray-600 mt-10 rounded-r-3xl px-9 py-10 flex flex-col content-between">
+				<!-- card3 enterprise -->
+				<div class="bg-indigo-950 flex-1 border border-l-0 border-gray-600 mt-10 rounded-r-3xl px-9 py-10 flex flex-col justify-between">
 					<div>
 						<p class="text-gray-50 text-lg font-semibold">Enterprise</p>
 						<p class="mt-5">Dedicated support and infrastructure for your company.</p>
