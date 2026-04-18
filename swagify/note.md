@@ -112,11 +112,11 @@
 			[ ] add to favorite/playlist icon
 		[ ] middle part (audio buttons and progress bar)
 			[ ] audio buttons
-				[ ] shuffle button
-				[ ] previous button
-				[ ] play button
-				[ ] next button
-				[ ] repeat button
+				[x] shuffle button
+				[x] previous button
+				[x] play button
+				[x] next button
+				[x] repeat button
 			[ ] progress bar
 		[ ] right part (other settings)
 			[ ] lyrics button
