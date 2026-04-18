@@ -47,7 +47,7 @@
 	
 	[ ] main section (divided into 3 parts)
 		[ ] left part (Your library) (2 main parts)
-			[ ] 1st part [has 2 layers]
+			[ ] top part [has 2 layers]
 				[ ] 1st layer
 					[ ] "Your Library"
 						[ ] links to users library
@@ -59,7 +59,7 @@
 					[ ]	Playlist
 					[ ] Artists
 					[ ] Albums
-			[ ] 2nd part
+			[ ] bottom part
 				[ ] search bar with filter
 				[ ] List of playlists/albums/artists
 					[ ] each playlist has
@@ -106,10 +106,10 @@
 	
 	[ ] bottom section (playbar) (divided into 3 parts)
 		[ ] left part (current song)
-			[ ] song image
-			[ ] title
-			[ ] artist
-			[ ] add to favorite/playlist icon
+			[x] song image
+			[x] title
+			[x] artist
+			[x] add to favorite/playlist icon
 		[ ] middle part (audio buttons and progress bar)
 			[ ] audio buttons
 				[x] shuffle button
