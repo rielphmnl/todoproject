@@ -48,17 +48,18 @@
 	[ ] main section (divided into 3 parts)
 		[ ] left part (Your library) (2 main parts)
 			[ ] top part [has 2 layers]
-				[ ] 1st layer
-					[ ] "Your Library"
+				[x] 1st layer
+					[x] "Your Library"
 						[ ] links to users library
-					[ ] "+" icon
+					[x] "+" icon
 						[ ] creates new playlist, folder or jam
-					[ ] expand button
+					[x] expand button
 						[ ] expands display of "Your Library" part
-				[ ] 2nd layer
-					[ ]	Playlist
-					[ ] Artists
-					[ ] Albums
+				[x] 2nd layer
+					[x]	Playlist
+					[x] Podcasts
+					[x] Albums
+					[x] Artists
 			[ ] bottom part
 				[ ] search bar with filter
 				[ ] List of playlists/albums/artists
