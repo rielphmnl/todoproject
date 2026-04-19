@@ -31,6 +31,7 @@
 				[x] text area
 				[x] folder icon 
 					[ ] links to search
+			[ ] center middle part
 		[ ] right part
 			[x] link to install app
 			[x] notification icon
@@ -47,7 +48,7 @@
 	
 	[ ] main section (divided into 3 parts)
 		[ ] left part (Your library) (2 main parts)
-			[ ] top part [has 2 layers]
+			[x] top part [has 2 layers]
 				[x] 1st layer
 					[x] "Your Library"
 						[ ] links to users library
@@ -61,13 +62,14 @@
 					[x] Albums
 					[x] Artists
 			[ ] bottom part
-				[ ] search bar with filter
-				[ ] List of playlists/albums/artists
-					[ ] each playlist has
-						[ ] image
-						[ ] title
-						[ ] type (playlist/album/artist)
-						[ ] user author
+				[x] search bar with filter
+				[x] List of playlists/albums/artists
+					[x] each playlist has
+						[x] image
+						[x] title
+						[x] type (playlist/album/artist)
+						[x] user author
+				[ ] fix overflow y
 
 
 		[ ] middle part (main navigation)
@@ -106,23 +108,24 @@
 				[ ] ...
 	
 	[ ] bottom section (playbar) (divided into 3 parts)
-		[ ] left part (current song)
+		[x] left part (current song)
 			[x] song image
 			[x] title
 			[x] artist
 			[x] add to favorite/playlist icon
 		[ ] middle part (audio buttons and progress bar)
-			[ ] audio buttons
+			[x] audio buttons
 				[x] shuffle button
 				[x] previous button
 				[x] play button
 				[x] next button
 				[x] repeat button
 			[ ] progress bar
-		[ ] right part (other settings)
-			[ ] lyrics button
-			[ ] queue button
-			[ ] connect to a device button
-			[ ] mute and volume
-			[ ] open miniplayer button
-			[ ] full screen button
+			[ ] center middle part
+		[x] right part (other settings)
+			[x] lyrics button
+			[x] queue button
+			[x] connect to a device button
+			[x] mute and volume
+			[x] open miniplayer button
+			[x] full screen button

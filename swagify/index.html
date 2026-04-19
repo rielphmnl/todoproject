@@ -16,9 +16,15 @@
 			cursor: pointer
 		}
 
-		.library:hover svg{
+		.library:hover #libraryicon {
 			display: block;
 		}
+
+		#playlist:hover #playicon {
+			display:block;
+		}
+
+		
 	</style>
 
 </head>
@@ -74,15 +80,16 @@
 	</header>
 
 	<!-- main section -->
-	<section class="flex-1 m-2 flex gap-2">
-		<section class="bg-neutral-900 min-w-xs rounded-md">
+	<section class="flex-1 m-2 flex gap-2 bg-green-500">
+		<!-- your library -->
+		<section class="library bg-neutral-900 min-w-xs rounded-md flex flex-col">
 			<!-- top part -->
-			<div class="shadow-black shadow-lg pt-4 px-5">		
+			<div class="shadow-black shadow-lg pt-4 px-3">		
 				<!-- first layer -->
 				<div class="flex justify-between items-center">
 					<!-- left part of first layer -->
-					<div class="flex gap-3 library cursor-pointer">			
-						<svg class="hidden text-neutral-400 hover:text-neutral-300" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M4 6a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2zm5-2v16"/><path d="m15 10l-2 2l2 2"/></g></svg>		
+					<div class="flex gap-2 cursor-pointer">			
+						<svg id="libraryicon" class="hidden text-neutral-400 hover:text-neutral-300" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M4 6a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2zm5-2v16"/><path d="m15 10l-2 2l2 2"/></g></svg>		
 						<p class="font-semibold">Your Library</p>
 					</div>
 
@@ -110,16 +117,194 @@
 			</div>
 
 			<!-- bottom part -->
-			<div class="flex items-center justify-between px-5">
-				<!-- search -->
-				<div class="text-neutral-400 hover:text-neutral-300 hover:bg-neutral-700 rounded-full p-1 cursor-pointer">
-					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 256 256"><path fill="currentColor" d="m229.66 218.34l-50.07-50.06a88.11 88.11 0 1 0-11.31 11.31l50.06 50.07a8 8 0 0 0 11.32-11.32M40 112a72 72 0 1 1 72 72a72.08 72.08 0 0 1-72-72"/></svg>
+			<div class="px-2 bg-pink-600 h-full overflow-scroll">
+				<!-- search bar -->
+				<div class="flex items-center justify-between">
+					<!-- search -->
+					<div class="text-neutral-400 hover:text-neutral-300 hover:bg-neutral-700 rounded-full p-1 cursor-pointer">
+						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 256 256"><path fill="currentColor" d="m229.66 218.34l-50.07-50.06a88.11 88.11 0 1 0-11.31 11.31l50.06 50.07a8 8 0 0 0 11.32-11.32M40 112a72 72 0 1 1 72 72a72.08 72.08 0 0 1-72-72"/></svg>
+					</div>
+	
+					<!-- recents -->
+					<div  class="text-sm font-light text-neutral-400 hover:text-neutral-300 hover:scale-105 cursor-pointer flex gap-2 items-center">
+						<p>Recents</p>
+						<svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24"><path fill="currentColor" d="M4.32 4.75a1.25 1.25 0 0 0 0 2.5h.01a1.25 1.25 0 1 0 0-2.5zm3.99.5a.75.75 0 1 0 0 1.5h12a.75.75 0 1 0 0-1.5zm0 12a.75.75 0 0 0 0 1.5h12a.75.75 0 1 0 0-1.5zM7.56 12a.75.75 0 0 1 .75-.75h12a.75.75 0 1 1 0 1.5h-12a.75.75 0 0 1-.75-.75m-4.49 0c0-.69.56-1.25 1.25-1.25h.01a1.25 1.25 0 1 1 0 2.5h-.01c-.69 0-1.25-.56-1.25-1.25m1.25 4.75a1.25 1.25 0 1 0 0 2.5h.01a1.25 1.25 0 1 0 0-2.5z"/></svg>
+					</div>
 				</div>
 
-				<!-- recents -->
-				<div  class="text-sm font-light text-neutral-400 hover:text-neutral-300 hover:scale-105 cursor-pointer flex gap-2 items-center">
-					<p>Recents</p>
-					<svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24"><path fill="currentColor" d="M4.32 4.75a1.25 1.25 0 0 0 0 2.5h.01a1.25 1.25 0 1 0 0-2.5zm3.99.5a.75.75 0 1 0 0 1.5h12a.75.75 0 1 0 0-1.5zm0 12a.75.75 0 0 0 0 1.5h12a.75.75 0 1 0 0-1.5zM7.56 12a.75.75 0 0 1 .75-.75h12a.75.75 0 1 1 0 1.5h-12a.75.75 0 0 1-.75-.75m-4.49 0c0-.69.56-1.25 1.25-1.25h.01a1.25 1.25 0 1 1 0 2.5h-.01c-.69 0-1.25-.56-1.25-1.25m1.25 4.75a1.25 1.25 0 1 0 0 2.5h.01a1.25 1.25 0 1 0 0-2.5z"/></svg>
+				<!-- list of playlists/albums/etc -->
+				<div>
+					<!-- per item -->
+					<div id="playlist" class="hover:bg-neutral-800 cursor-pointer rounded-md h-16 w-full flex items-center px-2 gap-2">
+						<!-- thumbnail -->
+						<div class="size-12 rounded overflow-hidden relative">
+							<img class="size-full object-cover" src="https://upload.wikimedia.org/wikipedia/en/e/ef/Bad_Bunny_-_Deb%C3%AD_Tirar_M%C3%A1s_Fotos.png">
+							<svg id="playicon" class="text-neutral-300 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 hidden hover:scale-105" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M6.906 4.537A.6.6 0 0 0 6 5.053v13.894a.6.6 0 0 0 .906.516l11.723-6.947a.6.6 0 0 0 0-1.032z"/></svg>
+						</div>
+
+						<!-- details -->
+						<div>
+							<!-- title -->
+							<div>
+								<p class="text-neutral-300 font-light">DtMF radio</p>
+							</div>
+
+							<!-- sub details -->
+							<div>
+								<p class="text-neutral-400 text-sm font-light">Playlist • Spotify</p>
+							</div>
+						</div>
+					</div>
+
+					<!-- item repeat -->
+					<!-- item repeat -->
+					<div id="playlist" class="hover:bg-neutral-800 cursor-pointer rounded-md h-16 w-full flex items-center px-2 gap-2">
+						<!-- thumbnail -->
+						<div class="size-12 rounded overflow-hidden relative">
+							<img class="size-full object-cover" src="https://upload.wikimedia.org/wikipedia/en/e/ef/Bad_Bunny_-_Deb%C3%AD_Tirar_M%C3%A1s_Fotos.png">
+							<svg id="playicon" class="text-neutral-300 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 hidden hover:scale-105" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M6.906 4.537A.6.6 0 0 0 6 5.053v13.894a.6.6 0 0 0 .906.516l11.723-6.947a.6.6 0 0 0 0-1.032z"/></svg>
+						</div>
+
+						<!-- details -->
+						<div>
+							<!-- title -->
+							<div>
+								<p class="text-neutral-300 font-light">DtMF radio</p>
+							</div>
+
+							<!-- sub details -->
+							<div>
+								<p class="text-neutral-400 text-sm font-light">Playlist • Spotify</p>
+							</div>
+						</div>
+					</div>
+					<!-- item repeat -->
+					<!-- item repeat -->
+
+					<!-- item repeat -->
+					<!-- item repeat -->
+					<div id="playlist" class="hover:bg-neutral-800 cursor-pointer rounded-md h-16 w-full flex items-center px-2 gap-2">
+						<!-- thumbnail -->
+						<div class="size-12 rounded overflow-hidden relative">
+							<img class="size-full object-cover" src="https://upload.wikimedia.org/wikipedia/en/e/ef/Bad_Bunny_-_Deb%C3%AD_Tirar_M%C3%A1s_Fotos.png">
+							<svg id="playicon" class="text-neutral-300 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 hidden hover:scale-105" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M6.906 4.537A.6.6 0 0 0 6 5.053v13.894a.6.6 0 0 0 .906.516l11.723-6.947a.6.6 0 0 0 0-1.032z"/></svg>
+						</div>
+
+						<!-- details -->
+						<div>
+							<!-- title -->
+							<div>
+								<p class="text-neutral-300 font-light">DtMF radio</p>
+							</div>
+
+							<!-- sub details -->
+							<div>
+								<p class="text-neutral-400 text-sm font-light">Playlist • Spotify</p>
+							</div>
+						</div>
+					</div>
+					<!-- item repeat -->
+					<!-- item repeat -->
+
+					<!-- item repeat -->
+					<!-- item repeat -->
+					<div id="playlist" class="hover:bg-neutral-800 cursor-pointer rounded-md h-16 w-full flex items-center px-2 gap-2">
+						<!-- thumbnail -->
+						<div class="size-12 rounded overflow-hidden relative">
+							<img class="size-full object-cover" src="https://upload.wikimedia.org/wikipedia/en/e/ef/Bad_Bunny_-_Deb%C3%AD_Tirar_M%C3%A1s_Fotos.png">
+							<svg id="playicon" class="text-neutral-300 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 hidden hover:scale-105" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M6.906 4.537A.6.6 0 0 0 6 5.053v13.894a.6.6 0 0 0 .906.516l11.723-6.947a.6.6 0 0 0 0-1.032z"/></svg>
+						</div>
+
+						<!-- details -->
+						<div>
+							<!-- title -->
+							<div>
+								<p class="text-neutral-300 font-light">DtMF radio</p>
+							</div>
+
+							<!-- sub details -->
+							<div>
+								<p class="text-neutral-400 text-sm font-light">Playlist • Spotify</p>
+							</div>
+						</div>
+					</div>
+					<!-- item repeat -->
+					<!-- item repeat -->
+
+					<!-- item repeat -->
+					<!-- item repeat -->
+					<div id="playlist" class="hover:bg-neutral-800 cursor-pointer rounded-md h-16 w-full flex items-center px-2 gap-2">
+						<!-- thumbnail -->
+						<div class="size-12 rounded overflow-hidden relative">
+							<img class="size-full object-cover" src="https://upload.wikimedia.org/wikipedia/en/e/ef/Bad_Bunny_-_Deb%C3%AD_Tirar_M%C3%A1s_Fotos.png">
+							<svg id="playicon" class="text-neutral-300 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 hidden hover:scale-105" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M6.906 4.537A.6.6 0 0 0 6 5.053v13.894a.6.6 0 0 0 .906.516l11.723-6.947a.6.6 0 0 0 0-1.032z"/></svg>
+						</div>
+
+						<!-- details -->
+						<div>
+							<!-- title -->
+							<div>
+								<p class="text-neutral-300 font-light">DtMF radio</p>
+							</div>
+
+							<!-- sub details -->
+							<div>
+								<p class="text-neutral-400 text-sm font-light">Playlist • Spotify</p>
+							</div>
+						</div>
+					</div>
+					<!-- item repeat -->
+					<!-- item repeat -->
+
+					<!-- item repeat -->
+					<!-- item repeat -->
+					<div id="playlist" class="hover:bg-neutral-800 cursor-pointer rounded-md h-16 w-full flex items-center px-2 gap-2">
+						<!-- thumbnail -->
+						<div class="size-12 rounded overflow-hidden relative">
+							<img class="size-full object-cover" src="https://upload.wikimedia.org/wikipedia/en/e/ef/Bad_Bunny_-_Deb%C3%AD_Tirar_M%C3%A1s_Fotos.png">
+							<svg id="playicon" class="text-neutral-300 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 hidden hover:scale-105" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M6.906 4.537A.6.6 0 0 0 6 5.053v13.894a.6.6 0 0 0 .906.516l11.723-6.947a.6.6 0 0 0 0-1.032z"/></svg>
+						</div>
+
+						<!-- details -->
+						<div>
+							<!-- title -->
+							<div>
+								<p class="text-neutral-300 font-light">DtMF radio</p>
+							</div>
+
+							<!-- sub details -->
+							<div>
+								<p class="text-neutral-400 text-sm font-light">Playlist • Spotify</p>
+							</div>
+						</div>
+					</div>
+					<!-- item repeat -->
+					<!-- item repeat -->
+
+					<!-- item repeat -->
+					<!-- item repeat -->
+					<div id="playlist" class="hover:bg-neutral-800 cursor-pointer rounded-md h-16 w-full flex items-center px-2 gap-2">
+						<!-- thumbnail -->
+						<div class="size-12 rounded overflow-hidden relative">
+							<img class="size-full object-cover" src="https://upload.wikimedia.org/wikipedia/en/e/ef/Bad_Bunny_-_Deb%C3%AD_Tirar_M%C3%A1s_Fotos.png">
+							<svg id="playicon" class="text-neutral-300 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 hidden hover:scale-105" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M6.906 4.537A.6.6 0 0 0 6 5.053v13.894a.6.6 0 0 0 .906.516l11.723-6.947a.6.6 0 0 0 0-1.032z"/></svg>
+						</div>
+
+						<!-- details -->
+						<div>
+							<!-- title -->
+							<div>
+								<p class="text-neutral-300 font-light">DtMF radio</p>
+							</div>
+
+							<!-- sub details -->
+							<div>
+								<p class="text-neutral-400 text-sm font-light">Playlist • Spotify</p>
+							</div>
+						</div>
+					</div>
+					<!-- item repeat -->
+					<!-- item repeat -->
 				</div>
 			</div>
 		</section>
@@ -138,7 +323,7 @@
 		<!-- current song details -->
 		<div class="flex items-center gap-4">
 			<!-- song image -->
-			<div class="size-16 rounded overflow-hidden">
+			<div class="size-16 rounded overflow-hidden cursor-pointer">
 				<img class="size-full object-cover" src="https://upload.wikimedia.org/wikipedia/en/e/ef/Bad_Bunny_-_Deb%C3%AD_Tirar_M%C3%A1s_Fotos.png">
 			</div>
 
