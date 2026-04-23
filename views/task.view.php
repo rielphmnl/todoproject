@@ -1,44 +1,56 @@
 <?php require $_SERVER['DOCUMENT_ROOT'] . '/partials/head.php'; ?>
 
 
-<div class="task-action">
-	<div class="container">
+<div class="h-full w-full p-10">
+	<div class="h-full w-full">
 
-		<div>
-			<a class="button" href="/">Back</a>
+		<!-- back button -->
+		<div class="flex">
+			<a class="bg-neutral-300/95 border hover:bg-neutral-200 hover:scale-105 border-neutral-400 rounded-lg px-3 py-1 cursor-pointer" href="/">Back</a>
 		</div>
-		<form id="updateForm" method="POST" action="/actions/updateTask.php">	
-			<div class="detail">
-				<p class="label">ID:</p>
-				<input type="text" name="id" value="<?= $todo['id'] ?>" />
-			</div>
-			
-			<div class="detail">
-				<p class="label">Task:</p>
-				<input type="text" name="task" placeholder="<?= $todo['task'] ?>" value="<?= $todo['task'] ?>" />
-			</div>
 
-			<div class="detail">
-				<p class="label">Done?:</p>
-				<input
-					type="checkbox"
-					id="isDone"
-					name="isDone"
-					<?= $todo['isDone'] === 1 ? 'checked' : '' ?>
-					value="<?= $todo['isDone'] ?>"
-				/>
-			</div>
-		</form>
+		<!-- bottom area -->
+		<div class="w-full h-full flex justify-center items-center">
+			<div class="flex flex-col gap-5 items-center bg-neutral-300/95 rounded-xl p-5">
+				<form id="updateForm" method="POST" action="/actions/updateTask.php">	
+					<div class="flex gap-2">
+						<p class="flex justify-end w-14">ID:</p>
+						<input class="flex-1 font-bold" type="text" name="id" value="<?= $todo['id'] ?>" />
+					</div>
+					
+					<div class="flex gap-2">
+						<p class="w-14 flex justify-end">Task:</p>
+						<input class="flex-1 font-bold" type="text" name="task" placeholder="<?= $todo['task'] ?>" value="<?= $todo['task'] ?>" />
+					</div>
+		
+					<div class="flex gap-2">
+						<p class="w-14 flex justify-end">Done?:</p>
+						<input						
+							type="checkbox"
+							id="isDone"
+							name="isDone"
+							<?= $todo['isDone'] === 1 ? 'checked' : '' ?>
+							value="<?= $todo['isDone'] ?>"
+						/>
+					</div>
+				</form>
 
-		<div class="btn-options">
-			<!-- fix form for updating task -->	
-			<button id="saveBTN" type="submit">save</button>
+				<div class="flex justify-center gap-2 w-full">
+					<!-- fix form for updating task -->	
+					<button class="bg-neutral-300/95 border hover:bg-neutral-200 hover:scale-105 border-neutral-400 rounded-lg px-3 py-1 cursor-pointer" id="saveBTN" type="submit">save</button>
+		
+					<div class="">					
+						<form method="POST" action="/actions/deleteTask.php">
+							<input type="hidden" name="id" value="<?= $todo['id'] ?>" />
+							<button class="bg-neutral-300/95 border hover:bg-neutral-200 hover:scale-105 border-neutral-400 rounded-lg px-3 py-1 cursor-pointer" type="submit">delete</button>
+						</form>
+					</div>
+				</div>
+			</div>		
 
-			<form method="POST" action="/actions/deleteTask.php">
-				<input type="hidden" name="id" value="<?= $todo['id'] ?>" />
-				<button type="submit">delete</button>
-			</form>
 		</div>
+
+
 
 
 	</div>

@@ -13,4 +13,4 @@ $tasks = $db->query('SELECT * FROM multiPageTodo WHERE isDeleted = 0')
 
 // var_dump($tasks);
 
-goToLocation('index.php');
+goToLocation();

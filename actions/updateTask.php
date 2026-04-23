@@ -26,5 +26,5 @@ $updatedtask = $db->query('SELECT * FROM multiPageToDo WHERE id = ?', [$id])
 var_dump($updatedtask);
 
 
-// goToLocation('index.php');
+goToLocation();
 

@@ -27,4 +27,4 @@ var_dump($result);
 
 
 
-// goToLocation('index.php');
+goToLocation();

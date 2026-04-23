@@ -14,7 +14,7 @@ function urlIs($value) {
 }
 
 
-function goToLocation($page)
+function goToLocation($page = "/")
 {
-    header('Location: /' . $page); 
+    header('Location: ' . $page); 
 }

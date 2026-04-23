@@ -11,4 +11,4 @@ $id = $_POST['id'];
 
 $db->query('UPDATE multiPageToDo SET isDeleted = 1 WHERE id = ?', [$id]);
 
-goToLocation('index.php');
+goToLocation();

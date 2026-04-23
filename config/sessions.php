@@ -11,5 +11,5 @@ function isLoggedIn() {
 }
 
 function goToLogin() {
-	header('Location: /login.php');
+	header('Location: /login');
 }

@@ -41,4 +41,4 @@ $_SESSION['user'] = $fetchedUser;
 
 
 
-goToLocation('index.php');
+goToLocation();

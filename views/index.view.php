@@ -14,7 +14,7 @@
 						<?php echo $todo['isDone'] === 1 ? "<s>{$todo['task']}</s>" : "{$todo['task']}"; ?>
 					</p>
 					<div class="flex">
-						<a class="bg-neutral-300/95 border hover:bg-neutral-200 hover:scale-105 border-neutral-400 rounded-lg px-3 py-1 cursor-pointer" href="/task.php?id=<?= $todo['id'] ?>"><p>view</p></a>
+						<a class="bg-neutral-300/95 border hover:bg-neutral-200 hover:scale-105 border-neutral-400 rounded-lg px-3 py-1 cursor-pointer" href="/edit-todo?id=<?= $todo['id'] ?>"><p>view</p></a>
 					</div>
 				</div>
 			<?php endforeach ?>
@@ -23,7 +23,7 @@
 		</div>
 		<!-- create new -->
 		<div class="flex">
-			<a class="bg-neutral-300/95 border hover:bg-neutral-200 hover:scale-105 border-neutral-400 rounded-lg px-3 py-1 cursor-pointer" href="/new.php">Create TODO</a>
+			<a class="bg-neutral-300/95 border hover:bg-neutral-200 hover:scale-105 border-neutral-400 rounded-lg px-3 py-1 cursor-pointer" href="/create-todo">Create TODO</a>
 		</div>	
 	</div>
 	

@@ -30,4 +30,4 @@ $db->query('INSERT INTO users (username, password) VALUES (?,?);', [$username, $
 
 
 
-goToLocation('index.php');
+goToLocation();
